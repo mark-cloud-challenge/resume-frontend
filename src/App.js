@@ -59,7 +59,7 @@ const App = () => {
         </div>
         <div className="Footer">
             <hr/>
-            <p>Unique Visitors:</p>
+            <p>Unique Visitors: {visits}</p>
         </div>
     </div>
   );
