@@ -1,0 +1,27 @@
+{
+  "batch": [
+    {
+      "name": "Resume Website and API",
+      "stack": "CSS, React, Flask, Docker, Google Cloud, Google Domains",
+      "link": "https://github.com/mark-cloud-challenge",
+      "points": [
+        "Built a frontend containing my resume with a counter for unique visitors using React and CSS",
+        "Built a containerized API using Flask and Docker",
+        "Instantiated a Google Cloud managed MySQL database for API use",
+        "Deployed the frontend to my custom domain with an SSL certificate",
+        "Deployed the API using Cloud Run and an API Gateway",
+        "Used a load balancer to route requests to either the frontend or backend service"
+      ]
+    },
+    {
+      "name": "Landing Page",
+      "stack": "CSS, React",
+      "link": "https://github.com/mahikgot/katweb",
+      "points": [
+        "Created a simple landing page for my friend",
+        "Used React Router to handle navigating to different routes when navigation links are clicked",
+        "Used CSS for the stylization of the page"
+      ]
+    }
+  ]
+}

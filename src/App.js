@@ -1,6 +1,8 @@
 import './App.css';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import Project from './Project';
+import projects from './projects.json';
 
 const App = () => {
     const [visits, setVisits] = useState(0);
@@ -58,6 +60,18 @@ const App = () => {
                     <p>Microcontrollers, Sensor Systems</p>
                 </div>
             </div>
+        </div>
+        <div>
+            <p>
+                <b>Projects</b>
+            </p>
+            <hr/>
+            {projects.batch.map((project) => (
+                <Project
+                    {...project}
+                    key={project.name}
+                />
+            ))}
         </div>
         <div className="Footer">
             <hr/>

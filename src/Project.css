@@ -1,0 +1,17 @@
+.Project {
+    display: flex;
+    flex-direction: column;
+}
+.FirstLine {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.NameAndStack {
+    display: flex;
+    flex-direction:row;
+}
+
+ul {
+    margin-top: 0;
+}
