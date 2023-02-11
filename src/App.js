@@ -49,11 +49,13 @@ const App = () => {
                     <p>Languages</p>
                     <p>Technology</p>
                     <p>Tools</p>
+                    <p>Others</p>
                 </div>
                 <div className="Names">
                     <p>Python, Javascript, C/C++</p>
                     <p>React, MySQL, Google Cloud</p>
                     <p>Git, Docker</p>
+                    <p>Microcontrollers, Sensor Systems</p>
                 </div>
             </div>
         </div>
