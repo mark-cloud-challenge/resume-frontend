@@ -1,6 +1,16 @@
 import './App.css';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 
 const App = () => {
+    const [visits, setVisits] = useState(0);
+    useEffect(() => {
+        axios.get('/hits').then(res => {
+            setVisits(res.data['unique-visitors']);
+        })
+
+    }, []);
+
   return (
     <div className="App">
         <div className="Name">
@@ -34,9 +44,25 @@ const App = () => {
                 <b>SKILLS</b>
             </p>
             <hr/>
+            <div className="SkillsContainer">
+                <div className="SkillsFlex">
+                    <p>Languages</p>
+                    <p>Technology</p>
+                    <p>Tools</p>
+                </div>
+                <div className="Names">
+                    <p>Python, Javascript, C/C++</p>
+                    <p>React, MySQL, Google Cloud</p>
+                    <p>Git, Docker</p>
+                </div>
+            </div>
+        </div>
+        <div className="Footer">
+            <hr/>
+            <p>Unique Visitors:</p>
         </div>
     </div>
   );
-}
+};
 
 export default App;
