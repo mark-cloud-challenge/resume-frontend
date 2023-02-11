@@ -4,6 +4,8 @@ import axios from 'axios';
 import Project from './Project';
 import projects from './projects.json';
 
+axios.defaults.baseURL = 'https://resume.markguiang.dev';
+
 const App = () => {
     const [visits, setVisits] = useState(0);
     useEffect(() => {
