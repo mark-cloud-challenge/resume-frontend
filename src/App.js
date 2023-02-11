@@ -9,12 +9,13 @@ axios.defaults.baseURL = 'https://resume.markguiang.dev';
 const App = () => {
     const [visits, setVisits] = useState(0);
     useEffect(() => {
-        axios.get('/hits').then(res => {
-            setVisits(res.data['unique-visitors']);
-        })
-
+        axios.post('/hits').then(() => {
+	    axios.get('/hits').then(res => {
+		setVisits(res.data['unique-visitors']);
+	    });
+        });
     }, []);
-
+    
   return (
     <div className="App">
         <div className="Name">
